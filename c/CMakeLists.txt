@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(SOURCES bkv.c)
 
-add_library(bkv SHARED ${SOURCES})
+add_library(bkv STATIC ${SOURCES})
 
 add_executable(bkv_test bkv_test.c bkv_plus.h bkv_plus.c)
 
